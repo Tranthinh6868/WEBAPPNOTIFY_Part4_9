@@ -1,0 +1,23 @@
+@model LoginModel
+<div asp-validation-summary="All"></div>
+<form method="post">
+    <div>
+        <label asp-for="Username">Username</label>
+        <div>
+            <input type="text" asp-for="Username">
+        </div>
+    </div>
+    <div>
+        <label asp-for="Password">Password</label>
+        <div>
+            <input type="password" asp-for="Password">
+        </div>
+       
+    </div>
+    <div>
+        <button>Login</button>
+    </div>
+</form>
+
+
+@* https://ceb.net.vn/csharp/identity.html *@

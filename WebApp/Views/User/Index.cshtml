@@ -1,0 +1,24 @@
+@model List<IdentityUser>
+
+<table>
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Username</th>
+            <th>Phone Number</th>
+            <th>Command</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model) {
+        <tr>
+            <td>@item.Email</td>
+            <td>@item.UserName</td>
+            <td>@item.PhoneNumber</td>
+            <td>
+                <a href="/user/delete/@item.Id">Delete</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
